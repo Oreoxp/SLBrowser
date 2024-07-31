@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>V8 Integration Test</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+        button {
+            padding: 10px 20px;
+            font-size: 16px;
+            color:aquamarine;
+            background-color: black;;
+            cursor: pointer;
+        }
+        #output {
+            margin-top: 20px;
+            padding: 10px;
+            border: 1px solid #ccc;
+            background-color: #f9f9f9;
+        }
+        h1{
+            margin-top: 10000px;
+        }
+    </style>
+    <script>
+        dom.getElementById('textid').innerText = 'Document is loade2d';
+
+        function onButtonClick() {
+            console.log('Button clicked');
+            dom.getElementById('textid').innerText = 'Button clicked';
+        }
+    </script>
+</head>
+<body>
+    <h1>V8 Integration Test</h1>
+    <button onclick="onButtonClick()">Click Me</button>
+    <div id="textid" style="color: blue;">123456  ha</div>
+</body>
+</html>
